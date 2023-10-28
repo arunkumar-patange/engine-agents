@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
 # RUN git clone https://github.com/streamlit/streamlit-example.git .
 ADD . /app
 
+RUN npm install
 RUN npm install engine-agents
 RUN npm install -g ts-node typescript 
 
